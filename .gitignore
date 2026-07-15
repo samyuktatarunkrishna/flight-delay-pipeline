@@ -1,0 +1,14 @@
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Local Data Warehouse and Ingestion Caches
+data/aviation_dw.db
+data/raw/flights_aviationstack.json
+
+# System files
+.DS_Store
+
+# Large CSV Exports
+tableau_exports/stg_flights.csv
