@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "aviation_dw"."main"."airlines" ("carrier_code" text,"airline_name" text)
+  ;
+    -- dbt seed --
+    
+          COPY "aviation_dw"."main"."airlines" FROM 'dbt_project/seeds/airlines.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

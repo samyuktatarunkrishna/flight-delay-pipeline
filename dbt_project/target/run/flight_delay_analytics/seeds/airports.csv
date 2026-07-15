@@ -1,0 +1,11 @@
+
+    
+    
+    truncate table "aviation_dw"."main"."airports";
+    -- dbt seed --
+    
+          COPY "aviation_dw"."main"."airports" FROM 'dbt_project/seeds/airports.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  
