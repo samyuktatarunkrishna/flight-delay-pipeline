@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroFlow | Global Flight Delay & ATC Analytics Dashboard</title>
+    <meta name="description" content="Aviation-inspired global flight delay pipeline dashboard. Dark Mode HUD showing real-time ATC metrics, carrier performance, and route congestion.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!-- Leaflet.js (Map Library) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="dashboard/static/css/style.css">
+</head>
+<body class="atc-theme">
+    <!-- Flight-themed HUD HUD overlays -->
+    <div class="hud-grid-overlay"></div>
+    <div class="hud-scanline"></div>
+    <div class="glass-bg"></div>
+    <div class="glow-orb" id="orb-1"></div>
+    <div class="glow-orb" id="orb-2"></div>
+    
+    <div class="app-container">
+        <!-- Sidebar / Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <svg class="brand-icon animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3.5s-2.5 0-4 1.5L13.5 8.5l-8.2-1.8c-.9-.2-1.8.3-2 1.2s.3 1.8 1.2 2l8 1.8-3.5 3.5-3.3-1c-.6-.2-1.2.1-1.4.7s.1 1.2.7 1.4l4.2 1.2L10 21c-.2.6.1 1.2.7 1.4.6.2 1.2-.1 1.4-.7l1.2-4.2 1.2 4.2c.2.6.8.9 1.4.7.6-.2.9-.8.7-1.4l-1-3.3 3.5-3.5 1.8 8c.2.9 1.1 1.4 2 1.2.8-.2 1.3-1.1 1.1-2z"/>
+                </svg>
+                <div class="brand-text">
+                    <h2>AeroFlow</h2>
+                    <span class="mono-label">ATC TELEMETRY SYSTEM</span>
+                </div>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active" id="btn-overview">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="nav-icon"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+                    Overview
+                </a>
+                <a href="#map-section" class="nav-item" id="btn-map">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="nav-icon"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+                    ATC Radar Map
+                </a>
+                <a href="#congestion-section" class="nav-item" id="btn-congestion">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="nav-icon"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    Hourly Congestion
+                </a>
+            </nav>
+            
+            <div class="pipeline-status">
+                <div class="status-header">
+                    <span class="status-indicator online"></span>
+                    <span class="mono-label">LOCAL DW STORAGE</span>
+                </div>
+                <p class="mono-val">duckdb_v1.5.4 // ACTIVE</p>
+                <button class="btn-refresh" id="btn-trigger-refresh">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                    Compile DW Warehouse
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="main-header">
+                <div class="header-titles">
+                    <h1 id="main-title">Global Air Traffic Control Telemetry</h1>
+                    <p class="header-subtitle">Real-time status updates from domestic and international flight corridors</p>
+                </div>
+                
+                <div class="user-meta" style="gap: 0.75rem;">
+                    <!-- Theme Toggle Switch -->
+                    <button class="btn-theme-toggle" id="btn-theme-toggle" title="Toggle ATC Display Mode">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="theme-icon-sun" style="width: 14px; height: 14px;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="4.22" x2="19.78" y2="5.64"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="theme-icon-moon" style="width: 14px; height: 14px;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                        <span id="theme-btn-text">Light Mode</span>
+                    </button>
+                    <div class="data-badge live-badge animate-pulse-glow">
+                        <span class="live-pulse"></span>
+                        ATC Feed: <span id="lbl-live-count" class="mono-val">0</span> Streamed
+                    </div>
+                    <div class="data-badge mono-label">DBT 1.8 + DuckDB</div>
+                </div>
+            </header>
+
+            <!-- Navigation Ribbon / Region Selectors -->
+            <section class="region-section">
+                <div class="region-ribbon-container">
+                    <span class="mono-label label-spacing">FILTER REGION // </span>
+                    <div class="region-ribbon" id="region-selector">
+                        <button class="region-btn active" data-region="ALL">GLOBAL NETWORK</button>
+                        <button class="region-btn" data-region="NA">NORTH AMERICA</button>
+                        <button class="region-btn" data-region="EU">EUROPE</button>
+                        <button class="region-btn" data-region="APAC">ASIA-PACIFIC</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Distinctive Flight-themed KPIs -->
+            <section class="metrics-grid">
+                <!-- KPI 1: Flights Logged (Blue) -->
+                <div class="metric-card theme-cyan" id="metric-flights">
+                    <div class="metric-hud-decor"></div>
+                    <div class="metric-info">
+                        <span class="metric-label mono-label">TOTAL FLIGHTS INDEX</span>
+                        <h3 class="metric-value mono-val" id="val-flights">--</h3>
+                        <span class="metric-trend text-cyan">▲ System live capture</span>
+                    </div>
+                    <div class="metric-icon-wrapper cyan-glow">
+                        <!-- Takeoff Airplane Logo -->
+                        <svg class="m-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- KPI 2: Average Arrival Delay (Amber) -->
+                <div class="metric-card theme-amber" id="metric-on-time">
+                    <div class="metric-hud-decor"></div>
+                    <div class="metric-info">
+                        <span class="metric-label mono-label">AVG ARRIVAL DELAY</span>
+                        <h3 class="metric-value mono-val" id="val-arr-delay">--</h3>
+                        <span class="metric-trend text-amber">◆ Terminal holding buffer</span>
+                    </div>
+                    <div class="metric-icon-wrapper amber-glow">
+                        <!-- Airplane landing/delayed radar logo -->
+                        <svg class="m-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 21H3"/>
+                            <path d="M12 3v14"/>
+                            <path d="M7 11.5L12 17l5-5.5"/>
+                            <path d="M21 7.5L17.5 11M3 7.5L6.5 11"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- KPI 3: Average Departure Delay (Orange) -->
+                <div class="metric-card theme-orange" id="metric-dep-delay">
+                    <div class="metric-hud-decor"></div>
+                    <div class="metric-info">
+                        <span class="metric-label mono-label">AVG DEPARTURE DELAY</span>
+                        <h3 class="metric-value mono-val" id="val-dep-delay">--</h3>
+                        <span class="metric-trend text-orange">◆ Runway gate congestion</span>
+                    </div>
+                    <div class="metric-icon-wrapper orange-glow">
+                        <!-- Engine / Turbine telemetry logo -->
+                        <svg class="m-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- KPI 4: Cancellation Rate (Red) -->
+                <div class="metric-card theme-red" id="metric-cancellation">
+                    <div class="metric-hud-decor"></div>
+                    <div class="metric-info">
+                        <span class="metric-label mono-label">GROUNDED FLIGHT RATE</span>
+                        <h3 class="metric-value mono-val" id="val-cancellation">--</h3>
+                        <span class="metric-trend text-red">▼ Cancelled / Diverted</span>
+                    </div>
+                    <div class="metric-icon-wrapper red-glow">
+                        <!-- Warning/Grounded airplane logo -->
+                        <svg class="m-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 22h20L12 2zM12 9v4M12 17h.01"/>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dashboard Visualizations -->
+            <div class="charts-row">
+                <!-- Carrier Delay Causes Breakdown -->
+                <div class="chart-container large">
+                    <div class="chart-hud-decor-line"></div>
+                    <div class="chart-header">
+                        <h3 class="mono-label glow-text">FLIGHT DELAY CATEGORY CONTRIBUTION</h3>
+                        <span class="chart-subtitle">dbt fct_delays analytics joined with corporate airlines index</span>
+                    </div>
+                    <div class="chart-body">
+                        <canvas id="chart-carrier-delays" aria-label="Carrier Delays Chart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Delay Rates by Carrier -->
+                <div class="chart-container small">
+                    <div class="chart-hud-decor-line"></div>
+                    <div class="chart-header">
+                        <h3 class="mono-label glow-text">AIRLINE DELAY DISCREPANCY</h3>
+                        <span class="chart-subtitle">Average arrival delay minutes per carrier</span>
+                    </div>
+                    <div class="chart-body">
+                        <canvas id="chart-carrier-flights" aria-label="Carrier Flights Chart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Route Map Section -->
+            <div class="charts-row" id="map-section">
+                <div class="chart-container full-width">
+                    <div class="chart-hud-decor-line"></div>
+                    <div class="chart-header">
+                        <div class="chart-header-left">
+                            <h3 class="mono-label glow-text">ATC REAL-TIME RADAR // GLOBAL FLIGHT PATHS</h3>
+                            <span class="chart-subtitle">Hover over routes to display coordinates and latency rates</span>
+                        </div>
+                        <div class="radar-hud-labels">
+                            <span class="radar-status animate-blink"><span class="radar-indicator"></span> RADAR SWEEP ACTIVE</span>
+                        </div>
+                    </div>
+                    <div class="chart-body" style="min-height: 440px; display: block; padding-top: 10px;">
+                        <div id="route-map" style="width: 100%; height: 420px; border-radius: 14px; border: 1px solid rgba(6, 182, 212, 0.2); background-color: #060b13;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="charts-row" id="congestion-section">
+                <!-- Congestion Hourly Trends -->
+                <div class="chart-container full-width">
+                    <div class="chart-hud-decor-line"></div>
+                    <div class="chart-header">
+                        <h3 class="mono-label glow-text">DIURNAL CONGESTION METRIC & PEAK FREQUENCY</h3>
+                        <span class="chart-subtitle">dbt mart_congestion analytics showing runway delay thresholds hourly</span>
+                    </div>
+                    <div class="chart-body">
+                        <canvas id="chart-congestion-hourly" aria-label="Hourly Congestion Chart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Routes Table / Route Metrics Section -->
+            <section class="table-section" id="routes-section">
+                <div class="table-hud-decor-line"></div>
+                <div class="table-header">
+                    <div class="table-header-left">
+                        <h3 class="mono-label glow-text">ATC CORRIDOR PERFORMANCE STATISTICS</h3>
+                        <span class="table-subtitle">dbt mart_route_performance joined with static airport seed indices</span>
+                    </div>
+                    <div class="table-search">
+                        <input type="text" id="route-search-input" class="hud-input mono-val" placeholder="SEARCH AIRPORTS (E.G. DXB)...">
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <table id="routes-table">
+                        <thead>
+                            <tr>
+                                <th id="th-route" class="mono-label">FLIGHT PATH</th>
+                                <th id="th-origin" class="mono-label">ORIGIN TERMINAL</th>
+                                <th id="th-dest" class="mono-label">DESTINATION TERMINAL</th>
+                                <th id="th-flights" class="mono-label">FLIGHT COUNT</th>
+                                <th id="th-ontime" class="mono-label">ON-TIME ARRIVAL RATE</th>
+                                <th id="th-delay" class="mono-label">LATENCY INDEX</th>
+                            </tr>
+                        </thead>
+                        <tbody id="routes-table-body" class="mono-val">
+                            <tr>
+                                <td colspan="6" class="table-loader">Loading global telemetry metrics...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Syncing overlay modal (HUD themed) -->
+    <div class="modal-overlay" id="sync-modal">
+        <div class="modal-content hud-modal">
+            <div class="spinner hud-spinner"></div>
+            <h3 class="mono-label glow-text">RE-COMPILING DATA WAREHOUSE PIPELINE</h3>
+            <p class="mono-label" style="font-size: 0.8rem;">Executing dbt seed imports, processing global flight records (1M+ rows), and compiling Tableau exports.</p>
+            <div class="modal-log-box mono-val" id="modal-log">Initiating warehouse handshake...</div>
+        </div>
+    </div>
+
+    <!-- Leaflet.js -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Custom JS -->
+    <script src="dashboard/static/js/app.js"></script>
+</body>
+</html>
