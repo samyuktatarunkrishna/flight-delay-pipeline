@@ -1,7 +1,16 @@
 flight_delay_profile:
-  target: dev
+  target: prod  # Default target swapped to GCP BigQuery
   outputs:
     dev:
       type: duckdb
       path: '/Users/samyuktareddy/Desktop/flight-delay-pipeline/data/aviation_dw.db'
       threads: 4
+    prod:
+      type: bigquery
+      method: oauth
+      project: "{{ env_var('GCP_PROJECT_ID', 'flight-delay-analytics') }}"
+      dataset: flight_delay_analytics
+      threads: 4
+      timeout_seconds: 300
+      priority: interactive
+      retries: 1

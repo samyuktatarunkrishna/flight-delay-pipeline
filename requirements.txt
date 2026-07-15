@@ -1,5 +1,6 @@
 duckdb>=0.9.0
 dbt-duckdb>=1.6.0
+dbt-bigquery>=1.6.0
 pandas>=2.0.0
 fastapi>=0.100.0
 uvicorn>=0.22.0
