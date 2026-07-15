@@ -1,0 +1,273 @@
+origin_airport,origin_airport_name,origin_city,origin_state,origin_latitude,origin_longitude,dest_airport,dest_airport_name,dest_city,dest_state,dest_latitude,dest_longitude,total_flights,cancelled_flights,diverted_flights,avg_dep_delay,avg_arr_delay,on_time_arrival_pct,cancellation_rate_pct
+LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,LHR,London Heathrow Airport,London,London,51.47,-0.4543,19953,270.0,108.0,13.064301107602867,14.052573547837419,80.38,1.35
+SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,LHR,London Heathrow Airport,London,London,51.47,-0.4543,10887,190.0,50.0,13.207770735739873,14.25452374391476,80.47,1.75
+SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,1540,18.0,10.0,13.754545454545454,15.403896103896104,78.38,1.17
+FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,957,10.0,4.0,13.057471264367816,15.238244514106583,78.46,1.04
+SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,1764,28.0,8.0,13.882086167800454,14.585600907029479,79.61,1.59
+DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,2257,38.0,15.0,13.813026140894994,15.508196721311476,78.46,1.68
+SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,18548,233.0,99.0,13.578660772050895,14.132467112357128,80.48,1.26
+SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,1103,7.0,4.0,12.088848594741615,13.833182230281052,81.48,0.63
+SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,12215,187.0,70.0,13.562095783872287,14.465738845681539,79.81,1.53
+HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,1271,11.0,9.0,11.154209284028324,14.92053501180173,78.1,0.87
+ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,1620,24.0,4.0,12.16604938271605,13.59320987654321,81.02,1.48
+FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,1130,17.0,4.0,13.467256637168141,14.29646017699115,80.95,1.5
+LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,1757,27.0,11.0,12.428002276607854,13.922026180990324,81.33,1.54
+LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,1191,22.0,9.0,13.225020990764063,13.956339210747272,80.15,1.85
+HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,LHR,London Heathrow Airport,London,London,51.47,-0.4543,10278,163.0,49.0,13.154699357851722,14.308912239735356,80.16,1.59
+LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,2444,33.0,15.0,13.574468085106384,14.01063829787234,80.09,1.35
+SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,1825,33.0,9.0,12.045479452054794,14.553424657534247,80.41,1.81
+FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,1377,12.0,4.0,13.931009440813362,14.60639070442992,80.07,0.87
+SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,1412,22.0,12.0,14.535410764872521,14.88243626062323,78.99,1.56
+CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,1289,18.0,3.0,12.467804499612102,12.750969743987588,82.3,1.4
+SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,1176,10.0,7.0,13.125850340136054,16.0,78.22,0.85
+SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,1304,23.0,3.0,12.929447852760736,14.450153374233128,81.11,1.76
+SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,1430,23.0,8.0,13.716083916083916,14.174825174825175,80.88,1.61
+FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,710,11.0,5.0,14.756338028169013,14.173239436619719,80.4,1.55
+ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,2665,37.0,18.0,12.597373358348968,15.314821763602252,79.19,1.39
+LHR,London Heathrow Airport,London,London,51.47,-0.4543,LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,1175,21.0,9.0,11.805106382978723,14.239148936170213,79.46,1.79
+MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,1342,22.0,2.0,12.76602086438152,13.418032786885245,81.89,1.64
+DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,1184,19.0,6.0,13.40625,13.567567567567568,81.89,1.6
+ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,1764,26.0,6.0,13.154195011337869,13.46655328798186,81.3,1.47
+DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,1705,19.0,7.0,11.146041055718475,14.61524926686217,79.66,1.11
+HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,691,13.0,1.0,15.723589001447179,15.687409551374818,79.35,1.88
+SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,757,10.0,3.0,12.626155878467635,14.071334214002642,80.86,1.32
+SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,1391,17.0,2.0,12.379583033788641,15.06685837526959,79.55,1.22
+JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,1583,27.0,6.0,12.574857864813644,15.634870499052433,78.21,1.71
+SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,1011,9.0,8.0,13.229475766567754,13.181008902077151,80.74,0.89
+SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,1202,13.0,4.0,13.89018302828619,16.208818635607322,78.64,1.08
+MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,877,12.0,5.0,14.107183580387685,14.41049030786773,80.92,1.37
+FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,866,12.0,6.0,13.900692840646652,12.20785219399538,81.73,1.39
+JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,2020,36.0,15.0,13.49950495049505,14.734158415841584,80.04,1.78
+LHR,London Heathrow Airport,London,London,51.47,-0.4543,ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,1511,22.0,5.0,13.552614162806089,14.978160158835209,80.26,1.46
+MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,LHR,London Heathrow Airport,London,London,51.47,-0.4543,15364,210.0,75.0,13.326347305389222,14.258070814891955,80.05,1.37
+HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,956,15.0,2.0,13.086820083682008,15.503138075313808,79.81,1.57
+MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,1902,30.0,12.0,12.95688748685594,15.503680336487907,79.59,1.58
+LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,1534,17.0,7.0,13.26271186440678,13.46870925684485,82.4,1.11
+SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,1514,13.0,11.0,12.590488771466314,14.013210039630119,80.35,0.86
+JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,1691,20.0,6.0,13.336487285629804,13.79952690715553,81.27,1.18
+DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,1336,22.0,8.0,13.372754491017965,15.255239520958083,78.39,1.65
+DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,1481,27.0,5.0,13.983794733288319,14.582039162727886,79.71,1.82
+JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,1353,27.0,11.0,12.513673318551367,14.04730229120473,79.34,2.0
+HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,648,10.0,7.0,13.385802469135802,14.25925925925926,79.78,1.54
+LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,1355,18.0,5.0,13.744649446494465,15.01549815498155,80.48,1.33
+DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,1220,23.0,7.0,13.88688524590164,14.235245901639344,80.53,1.89
+SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,16149,208.0,82.0,12.87565793547588,14.213387825871571,80.31,1.29
+ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,805,12.0,3.0,13.46583850931677,14.437267080745341,80.33,1.49
+FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,1047,16.0,7.0,13.84909264565425,14.786055396370582,78.76,1.53
+DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,1950,38.0,14.0,13.673846153846155,14.67025641025641,79.76,1.95
+LHR,London Heathrow Airport,London,London,51.47,-0.4543,SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,982,19.0,4.0,12.64867617107943,13.943991853360489,81.72,1.93
+LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,1938,37.0,8.0,13.601135190918473,14.023219814241486,81.12,1.91
+ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,1617,27.0,7.0,12.902288188002474,13.063079777365491,81.45,1.67
+SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,1385,18.0,9.0,12.559566787003611,13.979061371841155,80.4,1.3
+SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,694,6.0,1.0,15.456772334293948,13.961095100864553,80.38,0.86
+DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,867,17.0,3.0,12.07843137254902,13.272202998846597,80.94,1.96
+JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,1181,20.0,7.0,13.504657070279425,13.574089754445385,81.65,1.69
+LHR,London Heathrow Airport,London,London,51.47,-0.4543,SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,1111,13.0,4.0,12.773177317731774,14.156615661566157,80.51,1.17
+LHR,London Heathrow Airport,London,London,51.47,-0.4543,CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,863,16.0,4.0,14.23638470451912,13.742757821552724,79.69,1.85
+DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,2264,28.0,11.0,13.215547703180212,12.883392226148409,82.29,1.24
+MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,1038,15.0,2.0,13.376685934489403,14.128131021194605,80.35,1.45
+DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,1689,19.0,3.0,13.613380698638247,15.36056838365897,79.46,1.12
+LHR,London Heathrow Airport,London,London,51.47,-0.4543,MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,1237,22.0,10.0,14.080032336297494,16.71382376717866,77.04,1.78
+CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,1467,24.0,8.0,12.921608725289706,14.693933197000682,80.18,1.64
+DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,1723,22.0,10.0,13.443993035403366,14.472431804991293,79.72,1.28
+CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,969,21.0,6.0,11.596491228070175,13.10732714138287,81.01,2.17
+SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,1020,23.0,2.0,12.716666666666667,14.04313725490196,80.64,2.25
+JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,1482,30.0,10.0,12.96761133603239,13.691632928475034,79.96,2.02
+CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,1262,13.0,2.0,13.698890649762282,14.968304278922345,79.42,1.03
+SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,LHR,London Heathrow Airport,London,London,51.47,-0.4543,166269,2582.0,830.0,13.183215151351124,14.43640125339059,80.08,1.55
+ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,LHR,London Heathrow Airport,London,London,51.47,-0.4543,24815,368.0,104.0,13.154019746121298,14.612855127946807,80.15,1.48
+SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,2279,26.0,12.0,12.307591048705573,15.008775778850373,79.58,1.14
+LHR,London Heathrow Airport,London,London,51.47,-0.4543,DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,13903,211.0,75.0,13.357476803567575,13.96935913112278,80.33,1.52
+LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,LHR,London Heathrow Airport,London,London,51.47,-0.4543,15866,234.0,85.0,13.232446741459725,14.037249464263205,80.5,1.47
+SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,19695,316.0,112.0,13.0008123889312,14.225082508250825,80.39,1.6
+CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,791,9.0,2.0,11.509481668773704,14.168141592920353,81.2,1.14
+DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,2115,33.0,7.0,12.465721040189125,14.1725768321513,80.69,1.56
+ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,2935,47.0,8.0,14.27495741056218,14.824872231686541,79.54,1.6
+SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,11396,175.0,63.0,13.283696033696033,13.88004563004563,80.53,1.54
+ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,990,15.0,6.0,13.106060606060606,12.083838383838383,82.05,1.52
+FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,1696,34.0,9.0,13.62617924528302,14.83372641509434,79.18,2.0
+DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,2742,39.0,13.0,13.467541940189642,14.538657913931436,78.91,1.42
+LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,1485,26.0,8.0,12.72929292929293,16.46127946127946,76.9,1.75
+ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,1070,16.0,4.0,13.122429906542056,16.067289719626167,78.75,1.5
+LHR,London Heathrow Airport,London,London,51.47,-0.4543,JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,1850,27.0,7.0,12.857837837837838,13.722702702702703,80.86,1.46
+JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,1277,22.0,2.0,13.484729835552075,14.68363351605325,79.76,1.72
+HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,1162,16.0,5.0,12.983648881239242,14.502581755593804,80.63,1.38
+ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,741,17.0,3.0,12.132253711201079,13.284750337381917,81.22,2.29
+ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,1700,28.0,8.0,13.372941176470588,15.312941176470588,79.61,1.65
+DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,1394,25.0,7.0,13.9038737446198,13.703730272596843,80.06,1.79
+LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,2314,37.0,14.0,13.007778738115817,14.92048401037165,79.27,1.6
+LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,1882,26.0,10.0,13.285334750265674,15.392136025504783,79.09,1.38
+DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,716,18.0,5.0,13.564245810055866,13.451117318435754,82.23,2.51
+DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,1460,23.0,5.0,13.460958904109589,14.316438356164383,80.45,1.58
+LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,1177,17.0,3.0,13.557349192863212,14.005947323704333,80.34,1.44
+DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,1111,14.0,4.0,15.243024302430243,15.666066606660666,78.49,1.26
+MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,1441,25.0,9.0,13.23941707147814,16.76266481609993,76.62,1.73
+ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,878,13.0,6.0,13.234624145785878,14.394077448747153,79.88,1.48
+SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,843,9.0,1.0,12.268090154211151,13.559905100830369,81.65,1.07
+SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,1244,9.0,7.0,12.740353697749196,13.616559485530546,81.13,0.72
+SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,14631,210.0,71.0,13.56578497710341,14.271410019820928,80.24,1.44
+ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,2453,35.0,10.0,12.524256013045251,15.138605788830004,79.03,1.43
+MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,1935,36.0,9.0,13.819638242894056,14.342118863049096,79.94,1.86
+SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,11388,156.0,42.0,13.185809624165788,14.444942044257113,80.24,1.37
+LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,942,18.0,4.0,12.259023354564755,13.51592356687898,80.52,1.91
+ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,LHR,London Heathrow Airport,London,London,51.47,-0.4543,12988,202.0,74.0,13.265860794579613,14.55497382198953,79.67,1.56
+SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,9530,132.0,45.0,13.456453305351522,14.339244491080798,80.38,1.39
+SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,17658,260.0,85.0,13.350549326084494,14.492807792501981,79.97,1.47
+LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,1443,23.0,8.0,14.865557865557866,14.772695772695773,79.08,1.59
+LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,2711,58.0,7.0,13.580597565473996,14.438952416082627,80.1,2.14
+ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,1649,25.0,13.0,12.009096422073984,15.506367495451789,78.2,1.52
+LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,1147,18.0,7.0,15.006974716652136,13.47951176983435,81.22,1.57
+DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,1835,28.0,8.0,11.589100817438693,14.169482288828338,80.63,1.53
+LHR,London Heathrow Airport,London,London,51.47,-0.4543,ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,1443,22.0,7.0,13.89050589050589,15.645876645876646,78.68,1.52
+JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,1933,27.0,11.0,13.441282979824107,15.684945680289704,78.44,1.4
+SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,2046,24.0,14.0,13.785434995112414,14.790811339198436,79.13,1.17
+SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,1515,23.0,10.0,13.143234323432344,15.170957095709571,78.82,1.52
+ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,1381,21.0,9.0,13.267197682838523,13.85952208544533,80.96,1.52
+ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,1914,41.0,11.0,12.4717868338558,13.108672936259143,80.89,2.14
+CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,1166,15.0,5.0,13.483704974271012,14.586620926243567,80.1,1.29
+ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,1527,19.0,5.0,12.522593320235757,15.82973149967256,77.92,1.24
+LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,1634,29.0,3.0,12.78702570379437,14.9265605875153,79.19,1.77
+ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,2174,32.0,14.0,12.959521619135234,14.683992640294388,79.83,1.47
+MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,959,14.0,6.0,13.931178310740355,15.56621480709072,78.41,1.46
+HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,1489,23.0,8.0,13.147078576225654,14.971793149764943,80.08,1.54
+LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,1242,15.0,2.0,13.280193236714975,13.258454106280194,80.68,1.21
+FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,916,13.0,6.0,12.671397379912664,15.606986899563319,78.18,1.42
+DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,2119,42.0,8.0,13.068900424728646,14.7409155261916,79.83,1.98
+ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,950,21.0,3.0,13.402105263157894,14.170526315789473,80.09,2.21
+DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,971,9.0,1.0,12.609680741503604,14.008238928939237,81.08,0.93
+SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,1257,16.0,4.0,13.243436754176612,13.354813046937151,81.47,1.27
+SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,1839,23.0,15.0,12.1805328983143,13.744970092441545,80.34,1.25
+SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,1300,19.0,5.0,13.348461538461539,14.29,79.78,1.46
+FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,1410,17.0,7.0,13.11631205673759,14.347517730496454,81.69,1.21
+SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,10227,169.0,61.0,13.193116260878067,14.189107265082624,80.62,1.65
+ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,1522,30.0,4.0,14.829829172141919,14.47700394218134,80.03,1.97
+DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,2936,44.0,23.0,13.2891689373297,14.392029972752043,80.08,1.5
+SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,15645,233.0,83.0,13.45324384787472,14.61457334611697,79.61,1.49
+DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,LHR,London Heathrow Airport,London,London,51.47,-0.4543,11526,139.0,49.0,13.132309560992539,14.656949505465903,79.65,1.21
+DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,1656,26.0,12.0,14.122584541062801,14.033816425120772,80.06,1.57
+FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,1595,31.0,8.0,14.557366771159874,13.364263322884012,81.14,1.94
+SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,2172,28.0,12.0,14.638581952117864,14.008287292817679,80.69,1.29
+CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,LHR,London Heathrow Airport,London,London,51.47,-0.4543,13015,194.0,60.0,13.204379562043796,14.541298501728775,80.18,1.49
+DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,LHR,London Heathrow Airport,London,London,51.47,-0.4543,23511,348.0,103.0,13.35698183828846,14.26298328442006,80.33,1.48
+SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,1101,13.0,7.0,13.677565849227975,14.309718437783832,81.43,1.18
+DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,2703,37.0,14.0,13.751757306696263,15.001849796522382,79.18,1.37
+HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,1058,13.0,6.0,13.217391304347826,13.844045368620037,81.05,1.23
+LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,1000,15.0,2.0,14.605,12.396,82.94,1.5
+CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,1644,21.0,10.0,13.091240875912408,15.213503649635037,79.85,1.28
+LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,2066,31.0,12.0,12.457889641819943,14.519361084220716,80.05,1.5
+JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,2549,36.0,13.0,12.595919968615144,14.48018830914084,79.63,1.41
+DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,1387,22.0,3.0,12.54506128334535,13.930785868781543,81.25,1.59
+MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,1698,32.0,6.0,13.070082449941108,14.55771495877503,79.23,1.88
+SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,2327,38.0,8.0,12.757198109153416,14.343790287924366,80.03,1.63
+ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,1039,14.0,2.0,12.692974013474494,14.378248315688161,80.59,1.35
+MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,1168,17.0,5.0,12.434931506849315,12.214897260273972,81.93,1.46
+FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,832,16.0,0.0,14.086538461538462,13.302884615384615,81.62,1.92
+DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,870,9.0,7.0,14.45632183908046,15.535632183908046,78.16,1.03
+ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,2227,38.0,9.0,12.656937584193983,14.818140996856759,79.49,1.71
+LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,1494,26.0,3.0,12.17269076305221,14.641231593038823,80.45,1.74
+CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,993,20.0,4.0,12.77744209466264,14.446122860020141,79.45,2.01
+LHR,London Heathrow Airport,London,London,51.47,-0.4543,SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,1922,24.0,8.0,12.917793964620188,13.889698231009366,79.93,1.25
+SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,1221,21.0,9.0,13.344799344799345,14.1015561015561,80.25,1.72
+SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,1158,13.0,8.0,12.967184801381693,14.636442141623489,79.83,1.12
+JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,LHR,London Heathrow Airport,London,London,51.47,-0.4543,19891,287.0,98.0,13.254889145844855,14.55723694133025,80.01,1.44
+DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,2558,39.0,7.0,12.815871774824082,12.978889757623143,81.46,1.52
+LHR,London Heathrow Airport,London,London,51.47,-0.4543,SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,1629,24.0,8.0,12.848373235113566,14.131982811540823,81.31,1.47
+LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,2016,25.0,10.0,12.867559523809524,13.823412698412698,80.86,1.24
+DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,LHR,London Heathrow Airport,London,London,51.47,-0.4543,22140,354.0,105.0,12.953071364046973,14.280532971996386,80.31,1.6
+MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,1231,22.0,4.0,12.452477660438667,14.003249390739237,80.23,1.79
+CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,1794,33.0,6.0,13.537904124860647,15.66778149386845,78.31,1.84
+SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,10783,164.0,50.0,12.99925809144023,14.051469906334045,80.64,1.52
+LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,1054,12.0,5.0,13.993358633776092,15.114800759013283,79.37,1.14
+FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,1222,14.0,5.0,12.994271685761047,14.968903436988544,79.8,1.15
+JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,2238,30.0,9.0,12.944593386952636,14.848525469168901,79.94,1.34
+ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,3076,43.0,14.0,13.149544863459038,13.811768530559167,81.24,1.4
+DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,3178,63.0,15.0,13.056639395846444,15.118313404657018,79.26,1.98
+ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,1247,15.0,5.0,13.852445870088212,12.680032076984764,82.39,1.2
+SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,20970,332.0,108.0,12.911349546971865,14.243919885550786,80.38,1.58
+LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,1679,37.0,10.0,12.160214413341274,14.06432400238237,80.39,2.2
+MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,1612,27.0,9.0,13.318858560794045,14.671836228287841,80.0,1.67
+ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,1565,14.0,9.0,13.879872204472843,11.776357827476039,82.33,0.89
+SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,1074,21.0,5.0,12.54003724394786,13.288640595903166,80.63,1.96
+JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,1358,24.0,4.0,13.482326951399116,13.690721649484535,80.81,1.77
+SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,1554,29.0,2.0,13.358429858429858,13.37001287001287,81.7,1.87
+SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,1751,24.0,11.0,13.806396344945746,14.175328383780696,80.31,1.37
+DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,1593,26.0,11.0,13.2736974262398,14.015693659761457,80.92,1.63
+DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,1539,29.0,4.0,14.514619883040936,13.384665367121508,81.13,1.88
+SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,1063,20.0,4.0,12.323612417685794,12.871119473189088,82.45,1.88
+SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,926,12.0,4.0,12.807775377969762,13.524838012958963,81.18,1.3
+MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,1112,13.0,2.0,13.042266187050359,14.776079136690647,80.07,1.17
+HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,887,15.0,0.0,12.44532130777903,13.473506200676438,82.0,1.69
+MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,831,14.0,4.0,13.37424789410349,15.640192539109506,77.85,1.68
+LHR,London Heathrow Airport,London,London,51.47,-0.4543,LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,970,16.0,4.0,13.450515463917526,15.969072164948454,77.67,1.65
+SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,22343,323.0,119.0,13.040594369601218,14.172895313968581,80.14,1.45
+SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,LHR,London Heathrow Airport,London,London,51.47,-0.4543,17581,278.0,87.0,13.441101188783346,14.422330925430863,79.95,1.58
+LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,2091,36.0,9.0,11.722142515542803,14.204208512673363,80.15,1.72
+SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,LHR,London Heathrow Airport,London,London,51.47,-0.4543,18875,307.0,97.0,13.403655629139072,14.27676821192053,80.22,1.63
+FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,LHR,London Heathrow Airport,London,London,51.47,-0.4543,12170,173.0,55.0,13.080197206244865,13.994412489728841,80.52,1.42
+CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,831,5.0,5.0,14.231046931407942,13.237063778580024,81.96,0.6
+LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,1390,23.0,13.0,13.646043165467626,14.122302158273381,79.22,1.65
+DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,2896,48.0,18.0,13.290745856353592,14.385704419889503,80.37,1.66
+SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,1235,23.0,8.0,12.564372469635627,13.510121457489879,80.36,1.86
+JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,1217,20.0,4.0,13.611339359079704,14.75431388660641,79.11,1.64
+JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,1769,32.0,8.0,13.587902769926512,14.87167891464104,80.43,1.81
+MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,1258,17.0,6.0,13.348966613672497,12.58664546899841,81.87,1.35
+LHR,London Heathrow Airport,London,London,51.47,-0.4543,DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,1338,19.0,7.0,14.644992526158445,13.468609865470851,81.12,1.42
+DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,1363,7.0,5.0,13.418928833455613,13.997798972853998,80.53,0.51
+HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,740,12.0,4.0,14.547297297297296,14.612162162162162,79.81,1.62
+LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,1179,17.0,4.0,13.642917726887193,13.553859202714165,80.55,1.44
+DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,1496,24.0,9.0,13.649064171122994,14.96524064171123,78.94,1.6
+SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,846,16.0,5.0,12.775413711583925,14.108747044917259,81.2,1.89
+LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,1843,35.0,8.0,13.272924579489962,13.994031470428649,80.7,1.9
+SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,1202,17.0,6.0,12.11730449251248,15.662229617304492,79.41,1.41
+ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,3227,50.0,13.0,12.196467307096375,13.522776572668112,81.11,1.55
+CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,1608,21.0,6.0,12.940298507462687,14.081467661691542,81.1,1.31
+HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,1123,17.0,6.0,13.058771148708816,15.186999109528049,79.29,1.51
+SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,964,23.0,9.0,12.359958506224066,14.49792531120332,78.21,2.39
+HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,874,11.0,5.0,12.592677345537757,13.9279176201373,80.53,1.26
+SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,1164,21.0,3.0,12.75085910652921,13.95103092783505,80.75,1.8
+LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,1595,19.0,4.0,13.41128526645768,12.870219435736677,81.73,1.19
+HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,948,21.0,6.0,13.953586497890296,14.746835443037975,79.4,2.22
+LHR,London Heathrow Airport,London,London,51.47,-0.4543,FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,857,7.0,2.0,13.47024504084014,13.82147024504084,81.18,0.82
+ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,936,16.0,3.0,12.370726495726496,12.731837606837606,82.5,1.71
+DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,1485,21.0,7.0,13.294276094276094,15.206734006734006,79.1,1.41
+FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,1508,26.0,5.0,13.072281167108754,13.135941644562335,81.44,1.72
+LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,2240,34.0,11.0,13.10625,14.528571428571428,79.51,1.52
+HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,621,13.0,2.0,13.621578099838969,12.278582930756844,82.4,2.09
+SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,2189,34.0,7.0,13.372772955687529,13.948378254910919,80.6,1.55
+ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,1401,24.0,8.0,13.465381870092791,14.771591720199858,81.05,1.71
+SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,668,8.0,3.0,13.9625748502994,14.517964071856287,81.06,1.2
+FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,909,13.0,6.0,13.95929592959296,12.973597359735974,81.92,1.43
+CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,1357,18.0,6.0,13.23728813559322,15.379513633014001,78.57,1.33
+LHR,London Heathrow Airport,London,London,51.47,-0.4543,DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,1572,23.0,11.0,12.679389312977099,14.9529262086514,78.57,1.46
+LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,1420,25.0,8.0,13.972535211267605,16.2,77.99,1.76
+SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,13591,217.0,81.0,13.368773453020381,14.538223824589801,79.82,1.6
+CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,1211,18.0,14.0,11.474814203137903,12.886870355078447,81.06,1.49
+JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,2174,26.0,9.0,13.327966881324746,14.558417663293469,80.45,1.2
+DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,2055,28.0,14.0,13.629683698296837,15.243795620437956,79.23,1.36
+SEA,Seattle-Tacoma International Airport,Seattle,WA,47.4502,-122.3088,ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,1694,31.0,5.0,13.046044864226682,14.883116883116884,79.19,1.83
+DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,1616,22.0,8.0,14.387995049504951,14.52289603960396,79.86,1.36
+DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,716,11.0,2.0,12.416201117318435,16.16759776536313,78.16,1.54
+DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,1290,27.0,5.0,15.105426356589147,15.076744186046511,79.41,2.09
+ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,LAS,Harry Reid International Airport,Las Vegas,NV,36.084,-115.1537,1982,30.0,6.0,12.289606458123108,13.48486377396569,80.99,1.51
+DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,1777,27.0,13.0,12.861001688238604,13.868880135059088,81.03,1.52
+SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,1857,28.0,9.0,13.287022078621433,14.592353257942918,79.06,1.51
+SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,707,12.0,2.0,14.54879773691655,14.421499292786422,81.44,1.7
+LAX,Los Angeles International Airport,Los Angeles,CA,33.9416,-118.4085,JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,2569,39.0,17.0,13.562864927987544,15.544959128065395,79.13,1.52
+DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,1627,21.0,8.0,12.641671788567917,15.40381069452981,78.77,1.29
+DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,2446,36.0,8.0,12.939901880621422,14.837285363859362,79.88,1.47
+DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,921,12.0,3.0,13.44299674267101,13.0814332247557,82.4,1.3
+DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,1300,14.0,5.0,13.249230769230769,14.103076923076923,81.42,1.08
+HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,665,6.0,2.0,11.0406015037594,16.0796992481203,78.76,0.9
+SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,1382,24.0,8.0,12.826338639652677,12.6794500723589,82.11,1.74
+DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,DFW,Dallas/Fort Worth International Airport,Dallas,TX,32.8998,-97.0403,2426,44.0,14.0,14.342126957955482,13.869744435284419,80.27,1.81
+FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,ORD,Chicago O'Hare International Airport,Chicago,IL,41.9742,-87.9073,1224,27.0,5.0,14.945261437908497,13.68545751633987,80.79,2.21
+MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,SFO,San Francisco International Airport,San Francisco,CA,37.6213,-122.379,2064,37.0,12.0,13.366279069767442,14.30281007751938,79.92,1.79
+ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,FRA,Frankfurt Airport,Frankfurt,Hesse,50.0379,8.5622,780,15.0,2.0,13.896153846153846,14.493589743589743,80.39,1.92
+LHR,London Heathrow Airport,London,London,51.47,-0.4543,HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,993,8.0,7.0,12.070493454179255,14.144008056394764,81.73,0.81
+DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,MCO,Orlando International Airport,Orlando,FL,28.4281,-81.316,1057,19.0,7.0,12.239356669820246,13.590350047303689,80.15,1.8
+CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,SYD,Sydney Airport,Sydney,NSW,-33.9461,151.1772,1090,18.0,7.0,12.737614678899083,14.931192660550458,80.04,1.65
+CDG,Charles de Gaulle Airport,Paris,Paris,49.0097,2.5479,SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,979,16.0,3.0,12.07150153217569,15.604698672114402,79.34,1.63
+JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,1395,18.0,7.0,14.332616487455198,14.774910394265232,79.67,1.29
+DXB,Dubai International Airport,Dubai,Dubai,25.2532,55.3657,SIN,Changi Airport,Singapore,Singapore,1.3644,103.9915,816,14.0,1.0,13.535539215686274,12.939950980392156,81.55,1.72
+HND,Haneda Airport,Tokyo,Tokyo,35.5494,139.7798,JFK,John F. Kennedy International Airport,New York,NY,40.6398,-73.7781,1326,19.0,6.0,12.588235294117647,12.953242835595777,81.56,1.43
+ATL,Hartsfield-Jackson Atlanta International Airport,Atlanta,GA,33.6407,-84.4277,DEN,Denver International Airport,Denver,CO,39.8561,-104.6737,1149,22.0,3.0,12.542210617928633,13.308964316797216,82.17,1.91
