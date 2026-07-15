@@ -1,0 +1,7 @@
+flight_delay_profile:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '/Users/samyuktareddy/Desktop/flight-delay-pipeline/data/aviation_dw.db'
+      threads: 4

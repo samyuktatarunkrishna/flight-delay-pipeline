@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_flights
+    description: "Cleaned and casted flight records from the raw ingestion process."
+    columns:
+      - name: flight_number
+        description: "The unique flight identifier number."
+        tests:
+          - not_null
+      - name: carrier_code
+        description: "The 2-character unique airline carrier code."
+        tests:
+          - not_null
+      - name: origin_airport
+        description: "3-character airport code of the flight origin."
+        tests:
+          - not_null
+      - name: dest_airport
+        description: "3-character airport code of the flight destination."
+        tests:
+          - not_null

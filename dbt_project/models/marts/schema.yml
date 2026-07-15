@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: fct_delays
+    description: "Fact table containing daily flight delay metrics aggregated by carrier."
+    columns:
+      - name: flight_date
+        description: "The date of the flights."
+        tests:
+          - not_null
+      - name: carrier_code
+        description: "The carrier code."
+        tests:
+          - not_null
+
+  - name: mart_route_performance
+    description: "Analytics table representing aggregate route-level performance."
+    columns:
+      - name: origin_airport
+        description: "The origin airport."
+        tests:
+          - not_null
+      - name: dest_airport
+        description: "The destination airport."
+        tests:
+          - not_null
+
+  - name: mart_congestion
+    description: "Analytics table highlighting hourly and day-of-week traffic volume and delays."
+    columns:
+      - name: dep_hour
+        description: "Scheduled hour of departure."
+        tests:
+          - not_null
+      - name: day_of_week
+        description: "Name of day of week."
+        tests:
+          - not_null
